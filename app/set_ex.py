@@ -45,3 +45,6 @@ print("Difference Result:", r.smembers('diff_result'))  # Difference Result: {'2
 # Compute the intersection of set1 and set2 and store the result in a new set named inter_result
 r.sinterstore('inter_result', 'set1', 'set2')
 print("Intersection Result:", r.smembers('inter_result'))  # Intersection Result: {'3', '4'}
+
+# Reterive all elements in the set
+# SMEMBERS [key value]
