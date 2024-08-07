@@ -16,6 +16,7 @@ r.incrby('counter1', 5)
 counter1 = r.get('counter1')
 print("Counter1:", counter1)
 
+# To control mapping data, unofficially we use : to specify which are owned
 r.hset('user-session:123', mapping={
     'name': 'John',
     "surname": 'Smith',
